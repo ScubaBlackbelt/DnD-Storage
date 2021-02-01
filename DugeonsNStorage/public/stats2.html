@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+  <link rel="stylesheet" href="styles/bootstrap-material-design.min.css">
+  <link rel="stylesheet" href="styles/main.css">
+  <title>App Name</title>
+</head>
+
+<body>
+    <div class="bmd-layout-container bmd-drawer-f-l bmd-drawer-overlay">
+        <header class="bmd-layout-header">
+          <div class="navbar navbar-dark bg-faded fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="drawer" data-target="#dw-s2">
+              <span class="sr-only">Toggle drawer</span>
+              <i class="material-icons">menu</i>
+            </button>
+          </div>
+        </header>
+        <div id="dw-s2" class="bmd-layout-drawer bg-faded">
+          <header>
+            <a class="navbar-brand">Menu</a>
+          </header>
+          <ul class="list-group">
+            <a id="menuShowAllQuotes" class="list-group-item"><i class="material-icons">shopping_bag</i>Item</a>
+            <a id="menuShowMyQuotes" class="list-group-item"><i class="material-icons">person</i>Stats</a>
+            <a id="menuSignOut" class="list-group-item"><i class="material-icons">login</i>Caracter</a>
+          </ul>
+        </div>
+  <div id="mainPage" class="container page-container">
+    <div id="pageContent" class="justify-content-center">
+      <div class="row justify-content-center">
+        <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+          <h3 class="col-12" style="text-align: center">Str</h3>
+          <input type="text" class="form-control" id="inputStr">
+        </div>
+        <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+            <h3 class="col-12" style="text-align: center">Dex</h3>
+            <input type="text" class="form-control" id="inputDex">
+          </div>
+          <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+              <h3 class="col-12" style="text-align: center">Con</h3>
+              <input type="text" class="form-control" id="inputCon">
+            </div>
+      </div>
+
+      <div class="row justify-content-center">
+          <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+            <h3 class="col-12" style="text-align: center">Int</h3>
+            <input type="text" class="form-control" id="inputInt">
+          </div>
+          <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+              <h3 class="col-12" style="text-align: center">Wis</h3>
+              <input type="text" class="form-control" id="inputWis">
+            </div>
+            <div class="col-3" style="background-color: white; margin: 5px; border: 1px solid black">
+                <h3 class="col-12" style="text-align: center">Cha</h3>
+                <input type="text" class="form-control" id="inputCha">
+              </div>
+        </div>
+
+
+        <div class="row justify-content-center">
+            <div class="col-5" style="background-color: white; margin: 5px; border: 1px solid black">
+                <h3 class="col-12" style="text-align: center">Saving Throws</h3> 
+                <div>Fails
+                  <input type="checkbox" checked autocomplete="off" id="fail1">
+                  <input type="checkbox" checked autocomplete="off" id="fail2">
+                  <input type="checkbox" checked autocomplete="off" id="fail3">
+              </div>
+              <div>Pass
+                <input type="checkbox" checked autocomplete="off" id="pass1">
+                <input type="checkbox" checked autocomplete="off" id="pass2">
+                <input type="checkbox" checked autocomplete="off" id="pass3">
+            </div>
+              </div>
+
+          </div>
+    </div>
+    <button id="right" type="button" class="btn btn-warning bmd-btn-fab" style="position: fixed; right: 20px; bottom: 20px;">
+        <i class="material-icons">keyboard_arrow_right</i>
+      </button>
+      <button id="left" type="button" class="btn btn-warning bmd-btn-fab" style="position: fixed; left: 20px; bottom: 20px;">
+        <i class="material-icons">keyboard_arrow_left</i>
+      </button>
+  </div>
+
+  
+  <script src="scripts/jquery.min.js"></script>
+  <script src="scripts/popper.js"></script>
+  <script src="scripts/bootstrap-material-design.js"></script>
+  <script>$("body").bootstrapMaterialDesign();</script>
+  <script src="/__/firebase/7.18.0/firebase-app.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-analytics.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-auth.js"></script>
+  <script src="/__/firebase/7.18.0/firebase-firestore.js"></script>
+  <script src="/__/firebase/init.js"></script>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>
