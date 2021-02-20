@@ -1,0 +1,54 @@
+body {
+    background: #DDDDDD;
+}
+
+.navbar {
+    background-color: #800000;
+    color: white;
+}
+
+.page-container {
+    margin-top: 75px;
+}
+
+.newElement {
+    background: #800000;
+    color: white;
+}
+
+#items {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bmd-layout-container{
+    height: 100vh;
+}
+
+#rosefireButton, #delete {
+    display: block;
+    margin: 60px auto;
+    color: white;
+    background: #800000;
+    font-size: 1.1em;
+    padding: 10px 30px;
+    border-radius: 5px;
+}
+
+body {
+    height: 100vh;
+}
+
+.row div,
+.row h3,
+.row input {
+    font-size: .75em;
+}
+
+@media (min-width: 576px) {
+    .row div,
+    .row h3,
+    .row input {
+    font-size: 1em;
+}
+}
